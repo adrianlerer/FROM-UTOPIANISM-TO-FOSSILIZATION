@@ -438,3 +438,110 @@ Complete provenance and methodology for all data used in the analysis of Dixon &
 
 **Last Updated**: November 10, 2025
 **Maintained by**: Ignacio Adrián Lerer (adrian@lerer.com.ar)
+
+### 13. **Fiscal Sustainability Data - Colombia** [Verificado + Estimación] (NEW - v2.0)
+
+**Sources**:
+1. **IMF Government Finance Statistics (GFS)**
+   - URL: https://data.imf.org/GFS
+   - Period: 1991-2025
+   - Variables: Revenue, spending, deficit (% GDP)
+   
+2. **Colombian Budget Office (Ministerio de Hacienda y Crédito Público)**
+   - URL: https://www.minhacienda.gov.co/
+   - Period: 1991-2025
+   - Variables: ESR budget allocations, social spending
+   
+3. **IMF World Economic Outlook Database**
+   - URL: https://www.imf.org/WEO
+   - Period: 1991-2025
+   - Variables: Public debt (% GDP), debt capacity estimates
+
+**Verification**:
+- IMF data: Official international source ✓
+- Colombian Budget Office: Government records ✓
+- Debt capacity: Author estimation based on EM thresholds [Estimación]
+
+**Data Points**:
+| Year | Revenue (% GDP) | Spending (% GDP) | Deficit (% GDP) | Debt (% GDP) | FSI |
+|------|----------------|-----------------|----------------|-------------|-----|
+| 1991 | 9.1 | 15.0 | 5.9 | 20 | 1.517 |
+| 2005 | 19.7 | 23.5 | 3.8 | 36 | 1.164 |
+| 2020 | 19.5 | 29.0 | 9.5 | 50 | 0.672 |
+| 2025 | 19.7 | 31.7 | 12.0 | 72 | 0.432 |
+
+**Used For**:
+- Fiscal Sustainability Index (FSI) calculation
+- Colombia temporal trajectory (2005 success → 2025 collapse)
+- Demonstration that fiscal crisis overwhelmed institutional capacity
+
+---
+
+## 📚 Key Academic References (v2.0 Update)
+
+### **[4] Lerer, Ignacio Adrián (2025). "La Trampa Fiscal del Constitucionalismo Transformativo"**
+
+**Citation**:
+```
+Lerer, I. A. (2025). La trampa fiscal del constitucionalismo transformativo: 
+Cómo la aritmética presupuestaria mata las constituciones progresistas. 
+Working paper.
+```
+
+**Contribution to Dataset**:
+- Conceptual framework for Fiscal Sustainability Index (FSI)
+- Colombia 2020-2025 collapse empirical data
+- Deficit and debt trajectory analysis
+- Theoretical integration: fiscal dimension missing from Dixon & Landau (2025)
+
+**Key Argument**:
+> "El constitucionalismo transformativo requiere no solo apoyo popular y 
+> vías institucionales (Dixon & Landau), sino también sostenibilidad fiscal. 
+> La aritmética presupuestaria puede ahogar incluso las constituciones mejor 
+> diseñadas cuando el déficit supera el 10% del PBI y la deuda excede el 70%."
+
+**Empirical Evidence Contributed**:
+- Colombia 2025: Deficit 12% GDP, Debt 72% GDP, FSI 0.43
+- Argentina 2025: Deficit 14.8% GDP, Debt 88% GDP, FSI 0.23
+- Threshold validation: FSI < 0.50 predicts institutional collapse (r = 0.91)
+
+**Used For**:
+- Fiscal Sustainability Index (FSI) theoretical foundation
+- Colombia collapse explanation (2020-2025)
+- Third dimension addition to Dixon & Landau framework
+- Policy recommendations (URS includes fiscal red flags)
+
+**Status**: Working paper (forthcoming publication)
+**Author Email**: adrian@lerer.com.ar
+
+---
+
+## 🔄 Version History
+
+**v2.0** (November 2025):
+- Added fiscal sustainability data (IMF GFS, Colombian Budget Office)
+- Added Lerer (2025) "Trampa Fiscal" reference [4]
+- Updated Colombia data to include 2020-2025 collapse period
+- Added FSI metric data sources
+
+**v1.1** (November 2025):
+- Added visualizations data sources
+- Completed all 3 case studies (Colombia, Chile, Argentina)
+
+**v1.0** (November 2025):
+- Initial release with Colombia H1 and Chile H2 data
+
+---
+
+## 📧 Data Requests
+
+For access to raw data files or replication datasets, contact:
+**Ignacio Adrián Lerer**
+Email: adrian@lerer.com.ar
+
+---
+
+**Last Updated**: November 10, 2025
+**Total Data Sources**: 13 (3 new in v2.0)
+**Coverage Period**: 1949-2025 (76 years)
+
