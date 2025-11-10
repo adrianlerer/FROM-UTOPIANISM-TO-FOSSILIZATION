@@ -6,7 +6,7 @@ authors:
     email: adrian@lerer.com.ar
     affiliation: Independent Researcher
 title: "From Utopianism to Fossilization: A Quantitative Extension of Dixon & Landau Using Extended Phenotype Theory"
-version: 1.1.0
+version: 2.0.0
 date-released: 2025-11-10
 url: "https://github.com/adrianlerer/FROM-UTOPIANISM-TO-FOSSILIZATION"
 repository-code: "https://github.com/adrianlerer/FROM-UTOPIANISM-TO-FOSSILIZATION"
@@ -18,7 +18,9 @@ keywords:
   - constitutional lock-in
   - Dixon Landau
   - quantitative legal analysis
-  - Colombia 1991
+  - fiscal sustainability
+  - Colombia temporal trajectory
   - Chile 2022
   - Argentina fossilization
+  - budget constraints
 license: CC-BY-4.0
