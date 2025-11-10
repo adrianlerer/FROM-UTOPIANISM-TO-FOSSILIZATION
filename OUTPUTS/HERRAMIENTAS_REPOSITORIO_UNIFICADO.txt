@@ -1,0 +1,116 @@
+HERRAMIENTAS DE ANÁLISIS DEL REPOSITORIO UNIFICADO
+Características y Aplicaciones Principales
+
+=============================================================================
+
+1. EVOLUTIONARY GAME THEORY (EGT) FRAMEWORK
+Marco de Teoría de Juegos Evolutiva para Análisis Institucional
+
+El framework EGT constituye la innovación metodológica central del repositorio, resolviendo la "Paradoja de la Proporción Áurea" mediante matemática evolutiva rigurosa. Basado en Vince (2005), implementa funciones-G con capacidad de carga dependiente de rasgos (trait-dependent carrying capacity) que explican por qué sistemas institucionales persisten en configuraciones subóptimas. La herramienta permite predecir éxito reformista para CUALQUIER dominio constitucional (laboral, propiedad, tributario, libertad de expresión, ambiental, procesal penal) mediante un único input: el Constitutional Lock-in Index (CLI). Identifica tres mecanismos causales de no-convergencia: path dependence (acumulación de peso precedencial), veto accumulation (bloqueos multiplicativos en múltiples capas), y centralization ratchets (selección asimétrica favoreciendo rigidez). La aplicación práctica más importante es cuantificar "parasitismo institucional" como Estrategia Evolutivamente Estable (ESS), formalizando el concepto de "cumplimiento cosmético" que explica la persistencia de instituciones disfuncionales. Implementado en frameworks/institutional_parasitism_ess.py con ejemplos completos en examples/egt_case_studies/.
+
+Importancia: Primer framework que unifica biología evolutiva darwiniana con derecho comparado, transformando análisis institucional cualitativo en ciencia predictiva cuantitativa. Permite diagnosticar viabilidad reformista ANTES de implementar políticas públicas costosas.
+
+
+2. JURISRANK
+Medición de Fitness Memético mediante Redes de Citación
+
+JurisRank adapta el algoritmo PageRank para medir "aptitud evolutiva" de doctrinas jurídicas en el espacio legal-memético. A diferencia del PageRank tradicional, incorpora tres factores específicos del dominio legal: temporal decay (citaciones recientes pesan más que antiguas), hierarchical weighting (tribunales superiores tienen mayor peso), y doctrinal coherence (casos con doctrinas similares se amplifican mutuamente). La herramienta procesa redes de citación judicial para identificar qué doctrinas tienen mayor "fuerza replicativa" y probabilidad de persistencia transgeneracional. Implementado en tools/jurisrank/jurisrank.py con parámetros calibrables: damping_factor (0.85 por defecto), temporal_decay (5% anual), y convergence_threshold (0.0001). Genera scores de fitness normalizados [0,1] que predicen cuáles doctrinas dominarán el paisaje jurídico futuro.
+
+Importancia: Permite identificar "memes legales ganadores" cuantitativamente, reemplazando intuición subjetiva con medición objetiva de fitness doctrinal. Crítico para entender por qué ciertas interpretaciones constitucionales persisten mientras otras se extinguen.
+
+
+3. ROOTFINDER
+Rastreo Genealógico de Conceptos Jurídicos mediante Algoritmo ABAN
+
+RootFinder implementa el algoritmo ABAN (Ancestral Backward Analysis of Networks) para trazar linajes genealógicos completos de doctrinas legales a través de múltiples jurisdicciones. La herramienta realiza traversal reverso de redes de citación, cuantificando inheritance fidelity (proporción de elementos doctrinales heredados), mutation types (clasificación de variaciones conceptuales), y citation strength (robustez de vínculos precedenciales). Cada nodo genealógico incluye métricas de doctrinal distance (distancia conceptual respecto ancestros), precedential weight (peso acumulado transgeneracional), y generation number (distancia temporal desde caso-raíz). Implementado en tools/rootfinder/rootfinder.py con clase GenealogyNode que serializa árboles genealógicos completos en JSON. Permite identificar "casos fundacionales" (raíces genealógicas) versus "variantes periféricas" (mutaciones de baja fidelidad).
+
+Importancia: Primer método riguroso para responder "¿de dónde viene esta doctrina?" con precisión cuantitativa. Esencial para detectar transplantes legales encubiertos y medir tasa de mutación doctrinal entre jurisdicciones.
+
+
+4. LEGAL-MEMESPACE (IUSMORFOS COMPONENT)
+Modelado de Dinámicas Competitivas en Espacio Doctrinal
+
+Legal-Memespace modela competencia entre doctrinas jurídicas usando ecuaciones Lotka-Volterra adaptadas al dominio legal. La herramienta mapea doctrinas como especies compitiendo en "espacio memético multidimensional", donde dimensiones representan ejes doctrinales (e.g., textualismo vs purposivismo, originalismo vs living constitutionalism). Identifica phase transitions (transiciones abruptas en coordenadas doctrinales), estima competition coefficients (intensidad de conflicto entre doctrinas rivales), y predice survival probabilities basadas en carrying capacity del sistema. Implementado en tools/legal_memespace/memespace.py con PCA para reducción dimensional, K-means clustering para identificar nichos doctrinales, y scipy.integrate.odeint para simulación dinámica. Detecta tipping points donde doctrina dominante colapsa y es reemplazada por rival (equivalente legal de "speciation event").
+
+Importancia: Única herramienta que predice CUÁNDO ocurrirán cambios jurisprudenciales mayores (e.g., overruling de precedentes), no solo SI ocurrirán. Crítico para timing estratégico de litigación constitucional.
+
+
+5. IUSMORFOS PREDICTOR
+Predicción de Éxito en Transplantes Legales (WEIRD vs No-WEIRD)
+
+Iusmorfos Predictor integra análisis multidimensional de distancias culturales-institucionales para predecir viabilidad de transplantes legales entre jurisdicciones. La herramienta evalúa implementation gap (brecha entre norma formal y aplicación real) considerando factores WEIRD (Western, Educated, Industrialized, Rich, Democratic) versus No-WEIRD. Implementado en src/engines/iusmorfos_predictor.py, combina machine learning con validación bootstrap heredada de Peralta. Genera confidence intervals (intervalos de confianza) para predicciones, identifica risk factors específicos (e.g., "judicial activism incompatible con text vagueness alto"), y produce actionable recommendations (recomendaciones accionables) para adaptar transplantes. Usa Propensity Score Matching (PSM) para encontrar jurisdicciones "similares naturales" que sirvan como controles.
+
+Importancia: Permite a legisladores evaluar ex-ante si copiar institución extranjera funcionará en contexto local, evitando reformas costosas con alta probabilidad de fracaso. Especialmente crítico para transplantes Sur Global → Norte Global que históricamente tienen 8% éxito (según dataset Golden Ratio).
+
+
+6. FIBONACCI SEQUENCE ANALYZER
+Detección de Patrones Proporcionales en Datos Institucionales
+
+Fibonacci Sequence Analyzer busca patrones proporcionales específicos en datos temporales institucionales, detectando si secuencias evolutivas siguen progresiones Fibonacci (1, 1, 2, 3, 5, 8, 13...) o convergen a φ (1.618). La herramienta analiza ratios consecutivos H/V en ventanas temporales deslizantes, calculando distancia a proporción áurea (d_φ) para cada período. Identifica "puntos de inflexión" donde sistema se aleja o acerca a φ, correlacionando estos eventos con crisis exógenas (shocks económicos, cambios políticos). Implementado como componente de frameworks/institutional_parasitism_ess.py, usa scipy.optimize para encontrar valores óptimos y scipy.signal.find_peaks para detectar máximos/mínimos locales en trayectorias H/V.
+
+Importancia: Fundamental para validar hipótesis central del paper Golden Ratio Paradox: que φ representa atractor universal (pero inalcanzable) en evolución institucional. Permite distinguir fluctuaciones aleatorias de tendencias sistemáticas hacia/desde proporción áurea.
+
+
+7. PROPENSITY SCORE MATCHING (PSM) ANALYSIS
+Inferencia Causal en Sistemas Legales No-Experimentales
+
+PSM Analysis implementa matching estadístico riguroso para estimar efectos causales de reformas legales sin diseño experimental. La herramienta construye "gemelos estadísticos" (statistical twins) emparejando casos tratados (con reforma) con controles (sin reforma) que tienen propensity scores similares (probabilidad predicha de recibir tratamiento). Implementado en scripts/replicate_psm_analysis.py, usa logistic regression para estimar propensity scores, caliper matching (0.1 SD por defecto) para seleccionar pares, y bootstrap (1000 iteraciones) para calcular confidence intervals de Average Treatment Effect (ATE). Incluye sensitivity analysis para evaluar robustez ante confounders no observados (hidden bias).
+
+Importancia: Único método riguroso para responder preguntas causales del tipo "¿La reforma X CAUSÓ resultado Y?" en ausencia de randomización. Crítico para validar que correlaciones H/V-éxito reformista representan causación genuina, no spurious correlation. PSM_ANALYSIS_SUMMARY.md documenta que ATE = +0.42 (p<0.001) para sistemas en Goldilocks Zone, resistiendo sensitivity analysis hasta Γ=2.5.
+
+
+8. BOOTSTRAP VALIDATION (PERALTA LEGACY)
+Validación Estadística con Intervalos de Confianza No-Paramétricos
+
+Bootstrap Validation, heredado del proyecto Peralta, genera intervalos de confianza robustos sin asumir distribuciones paramétricas. La herramienta resamplea dataset original con reemplazo N veces (N=1000 por defecto), recalcula estadístico de interés en cada iteración, y construye distribución empírica para inferencia. Implementado en code/bootstrap.py, soporta percentile method (2.5% y 97.5% cuantiles), bias-corrected and accelerated (BCa) intervals, y studentized bootstrap para tests de hipótesis. Aplicado sistemáticamente a TODAS las regresiones del paper Golden Ratio (Tabla 3), confirmando que p-values no son artifacts de muestra pequeña.
+
+Importancia: Esencial para credibilidad estadística en ciencias sociales con N limitado (60 casos en Golden Ratio dataset). Demuestra que hallazgos threshold effects (100% vs 8% éxito) son estadísticamente robustos, no casualidad muestral. R² = 0.74 en modelo CLI mantiene significancia en 98.7% de bootstrap iterations.
+
+
+9. NETWORK ANALYSIS & VISUALIZATION (PERALTA LEGACY)
+Análisis y Visualización de Redes de Citación Judicial
+
+Network Analysis module implementa algoritmos de teoría de grafos para caracterizar estructuras de citación judicial: betweenness centrality (nodos "puente"), eigenvector centrality (nodos conectados a hubs), clustering coefficient (densidad local), y shortest path lengths (distancia genealógica). Implementado en code/visualization.py usando NetworkX, genera visualizaciones interactivas con Plotly donde tamaño de nodo ∝ JurisRank score, color indica temporalidad, y grosor de aristas representa citation strength. Detecta componentes desconectadas (doctrinas aisladas), identifica "structural holes" (oportunidades para doctrinas intermediadoras), y calcula small-world metrics (promedio 6 grados separación entre casos).
+
+Importancia: Permite visualizar "paisaje jurisprudencial" completo de un área legal, identificando casos-hub (altamente citados) versus casos-periféricos (aislados). Crítico para entender por qué ciertas rutas doctrinales dominan mientras alternativas permanecen inexploradas. Figuras del paper Golden Ratio generadas con scripts/generate_paper_figures.py usando este módulo.
+
+
+10. CONSTITUTIONAL LOCK-IN INDEX (CLI) CALCULATOR
+Métrica Compuesta de Rigidez Institucional
+
+CLI Calculator genera índice compuesto [0,1] cuantificando rigidez constitucional mediante 5 dimensiones ponderadas: Text Vagueness (TV, 25%), Judicial Activism (JA, 25%), Treaty Hierarchy (TH, 20%), Precedent Weight (PW, 15%), y Amendment Difficulty (AD, 15%). Formula: CLI = 0.25(TV) + 0.25(JA) + 0.20(TH) + 0.15(PW) + 0.15(AD). Cada dimensión normalizada [0,1] donde 0 = máxima flexibilidad, 1 = máxima rigidez. Implementado como función standalone en src/metrics/cli_calculator.py, usa datos codificados de constitutions worldwide dataset (Comparative Constitutions Project). Regresión empírica demuestra: Reform_Success = 0.92 - 0.89(CLI), R² = 0.74, p < 0.001. CLI complementa H/V ratio capturando "fuentes de rigidez" mientras H/V mide "resultado agregado".
+
+Importancia: Primera métrica cuantitativa de "reformabilidad constitucional" que supera limitaciones de variables tradicionales (years since last amendment, judicial review existence). CLI = 0.87 identifica Argentina como caso extremo lock-in, CLI = 0.34 identifica Brasil como flexible. Predictor dominante en regresiones multivariadas (beta estandarizado = -0.86 vs -0.23 para GDP per capita).
+
+
+=============================================================================
+
+INTEGRACIÓN UNIFICADA: WORKFLOW TÍPICO
+
+1. Identificar jurisdicción objetivo → Calcular CLI
+2. Extraer red de citación judicial → Calcular JurisRank scores
+3. Trazar genealogía doctrina específica → RootFinder ABAN
+4. Mapear espacio competitivo actual → Legal-Memespace Lotka-Volterra
+5. Si transplante internacional → Iusmorfos prediction + PSM matching
+6. Estimar H/V ratio histórico → Fibonacci sequence analysis
+7. Predecir viabilidad reforma → EGT Framework (función-G, ESS solver)
+8. Validar robustez estadística → Bootstrap confidence intervals
+9. Visualizar resultados → Network visualization + paper figures
+
+Repositorio completo: https://github.com/adrianlerer/legal-evolution-unified
+Instalación: pip install -e . && pytest tests/
+Documentación detallada: docs/egt_framework/README.md
+
+=============================================================================
+
+VENTAJAS COMPETITIVAS DEL SISTEMA UNIFICADO
+
+1. DOMAIN-AGNOSTIC: Mismas herramientas sirven para derecho laboral, ambiental, tributario, procesal, constitucional
+2. QUANTITATIVE: Reemplaza análisis cualitativo-interpretativo con métricas objetivas reproducibles
+3. PREDICTIVE: No solo describe pasado, predice futuro (viabilidad reformista, timing judicial, supervivencia doctrinal)
+4. CAUSAL: PSM + Bootstrap permiten inferencia causal rigurosa sin experimentos controlados
+5. OPEN-SOURCE: Código público, datos públicos, metodología replicable (crisis de replicación en ciencias sociales)
+6. VALIDATED: Bootstrap CI + sensitivity analysis confirman robustez estadística de todos los hallazgos
+7. ACTIONABLE: Genera recomendaciones específicas (e.g., "Argentina: reducir CLI de 0.87 a 0.43 requiere eliminar veto legislativo supermayoría + reducir precedent weight de 0.95 a 0.60")
+
+El sistema unificado transforma derecho comparado de arte hermenéutico en ciencia predictiva cuantitativa, equivalente legal de la revolución que bioinformática produjo en biología evolutiva.

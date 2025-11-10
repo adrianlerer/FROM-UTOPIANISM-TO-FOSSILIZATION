@@ -1,0 +1,8 @@
+Metric,Colombia_1991,Chile_2022,Chile_vs_Colombia
+Selection Pressure,0.683,0.31,-55%
+CLI (Lock-in),0.135,0.81,+500%
+Implementation Gap,0.35,0.745,+113%
+Cultural Distance,0.25,0.583,+133%
+Phenotypic Expression,0.398,0.125,-69%
+Constitutional Fitness,0.913,0.006,-99.3%
+Outcome,Success,Failure,Opposite
