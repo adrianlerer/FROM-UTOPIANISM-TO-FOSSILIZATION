@@ -52,7 +52,9 @@ Ideas for methodological improvements?
 
 ## Questions?
 
-Open an issue or contact the author through GitHub.
+Open an issue or contact the author:
+- GitHub: [@adrianlerer](https://github.com/adrianlerer)
+- Email: adrian@lerer.com.ar
 
 ## License
 

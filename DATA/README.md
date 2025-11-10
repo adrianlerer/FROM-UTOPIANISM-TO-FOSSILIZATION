@@ -332,4 +332,4 @@ GitHub: https://github.com/adrianlerer/FROM-UTOPIANISM-TO-FOSSILIZATION
 ---
 
 **Last Updated**: November 10, 2025
-**Contact**: GitHub Issues or [author email]
+**Contact**: GitHub Issues or adrian@lerer.com.ar

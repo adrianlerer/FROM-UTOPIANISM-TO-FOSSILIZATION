@@ -3,9 +3,10 @@ message: "If you use this work, please cite it as below."
 authors:
   - family-names: Lerer
     given-names: Ignacio Adrián
-    orcid: https://orcid.org/0000-0000-0000-0000
+    email: adrian@lerer.com.ar
+    affiliation: Independent Researcher
 title: "From Utopianism to Fossilization: A Quantitative Extension of Dixon & Landau Using Extended Phenotype Theory"
-version: 1.0.0
+version: 1.1.0
 date-released: 2025-11-10
 url: "https://github.com/adrianlerer/FROM-UTOPIANISM-TO-FOSSILIZATION"
 repository-code: "https://github.com/adrianlerer/FROM-UTOPIANISM-TO-FOSSILIZATION"

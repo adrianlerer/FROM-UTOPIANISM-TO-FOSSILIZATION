@@ -354,12 +354,12 @@ All data tagged with verification level:
 ## 👥 Author
 
 **Ignacio Adrián Lerer**
-- JD (Universidad de Buenos Aires)
+- Attorney at Law (Universidad de Buenos Aires)
 - Executive MBA (IAE Business School)
 - Research focus: Constitutional evolution, Extended Phenotype Theory, quantitative legal analysis
 - Location: Buenos Aires, Argentina
 
-📧 Contact: [Your email]
+📧 Contact: adrian@lerer.com.ar
 🌐 GitHub: [@adrianlerer](https://github.com/adrianlerer)
 
 ---
@@ -404,7 +404,14 @@ This work is licensed under a [Creative Commons Attribution 4.0 International Li
 
 ## 📝 Version History
 
-- **v1.0** (2025-11-10): Initial public release
+- **v1.1.0** (2025-11-10): Complete with visualizations
+  - Added 3 figure generation scripts (generate_figure1/2/3.py)
+  - Added 6 publication-quality figures (PNG 300dpi + PDF)
+  - Added DATA/README.md (complete dataset documentation)
+  - Added DOCUMENTATION/data_sources.md (full provenance)
+  - Repository 100% complete for SSRN submission
+
+- **v1.0.0** (2025-11-10): Initial public release
   - Paper draft complete (8,500 words)
   - All 3 analysis scripts validated
   - 8 CSV datasets generated
@@ -439,8 +446,7 @@ This work is licensed under a [Creative Commons Attribution 4.0 International Li
 Questions? Suggestions? Found a bug?
 
 - **GitHub Issues**: [Open an issue](https://github.com/adrianlerer/FROM-UTOPIANISM-TO-FOSSILIZATION/issues)
-- **Email**: [Your email]
-- **Twitter/X**: [@yourtwitterhandle]
+- **Email**: adrian@lerer.com.ar
 
 ---
 

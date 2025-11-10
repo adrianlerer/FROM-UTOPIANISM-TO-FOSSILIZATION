@@ -437,4 +437,4 @@ Complete provenance and methodology for all data used in the analysis of Dixon &
 ---
 
 **Last Updated**: November 10, 2025
-**Maintained by**: Ignacio Adrián Lerer
+**Maintained by**: Ignacio Adrián Lerer (adrian@lerer.com.ar)
