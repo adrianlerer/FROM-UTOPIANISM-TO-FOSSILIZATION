@@ -1,0 +1,154 @@
+{
+  "metadata": {
+    "project_name": "figure4_fiscal_sustainability",
+    "generated_at": "2025-11-11T04:31:03.144500",
+    "duration": "0:00:00.093472",
+    "framework": "Miyai et al. (2025) Jr. AI Scientist Risk Assessment"
+  },
+  "risk_assessment": {
+    "risk_level": "MODERATE",
+    "verification_score": 0.7375,
+    "total_claims": 8,
+    "evidence_breakdown": {
+      "verified": 2,
+      "calculated": 4,
+      "estimated": 0,
+      "inferred": 0,
+      "projected": 2
+    },
+    "risk_flags_count": 0,
+    "recommendation": "REVISION SUGGESTED. Add more verified data sources or acknowledge limitations."
+  },
+  "hypotheses": [
+    {
+      "hypothesis_id": "H1",
+      "hypothesis_text": "Colombia's fiscal sustainability improved over time (declining implementation gap)",
+      "baseline_source": "Dixon & Landau (2025) predict transformative success with adequate support. Implementation gap is proxy for fiscal sustainability.",
+      "theoretical_basis": "Transformative constitutions with popular support (SP > 0.65) and open pathways (CLI < 0.5) should show NARROWING gap as implementation proceeds. Colombia 1991 had both conditions.",
+      "testable": true,
+      "timestamp": "2025-11-11T04:31:03.051239",
+      "risk_flags": []
+    },
+    {
+      "hypothesis_id": "H2",
+      "hypothesis_text": "Chile 2022 would have had massive fiscal gap if passed (utopian)",
+      "baseline_source": "Dixon & Landau (2025) predict utopian failure without adequate resources. Fiscal gap = lack of resources.",
+      "theoretical_basis": "Constitutions with blocked pathways (CLI > 0.65) and insufficient support (SP < 0.35) show LARGE gaps between promises and capacity. Chile 2022 had both conditions.",
+      "testable": true,
+      "timestamp": "2025-11-11T04:31:03.051275",
+      "risk_flags": []
+    },
+    {
+      "hypothesis_id": "H3",
+      "hypothesis_text": "Argentina shows fossilization: worsening fiscal gap over 76 years",
+      "baseline_source": "Extended Phenotype Theory predicts lock-in accumulation. Argentina Art. 14bis persists since 1949.",
+      "theoretical_basis": "Utopian constitutions that cannot be reformed (CLI growing) accumulate WIDENING gaps as promises persist but implementation capacity declines. Argentina CLI grew +0.0055/year.",
+      "testable": true,
+      "timestamp": "2025-11-11T04:31:03.051301",
+      "risk_flags": []
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "claim_b78f98b0",
+      "claim_text": "Colombia data loaded: 8 time points from 1991-2025",
+      "evidence_type": "verified",
+      "source": "../DATA/analysis_results/colombia_constitutional_fitness.csv (generated from colombia_h1_analysis.py with World Bank + DANE sources)",
+      "timestamp": "2025-11-11T04:31:03.053519",
+      "verification_score": 1.0,
+      "theoretical_justification": null,
+      "external_validation": null,
+      "limitations": []
+    },
+    {
+      "claim_id": "claim_1e92dac1",
+      "claim_text": "Argentina data loaded: 9 time points from 1949-2025",
+      "evidence_type": "verified",
+      "source": "../DATA/analysis_results/argentina_cf_trajectory.csv (generated from argentina_paradox_analysis.py with CSJN fallos)",
+      "timestamp": "2025-11-11T04:31:03.054569",
+      "verification_score": 1.0,
+      "theoretical_justification": null,
+      "external_validation": null,
+      "limitations": []
+    },
+    {
+      "claim_id": "claim_e1238dbe",
+      "claim_text": "Chile data loaded: 1 projection for 2022 (counterfactual if passed)",
+      "evidence_type": "projected",
+      "source": "../DATA/analysis_results/chile_constitutional_fitness.csv (generated from chile_h2_analysis.py)",
+      "timestamp": "2025-11-11T04:31:03.055832",
+      "verification_score": 0.25,
+      "theoretical_justification": null,
+      "external_validation": null,
+      "limitations": [
+        "Counterfactual scenario (constitution was rejected)",
+        "Based on 2022 fiscal capacity estimates",
+        "Assumes no policy changes post-rejection"
+      ]
+    },
+    {
+      "claim_id": "claim_0e83e627",
+      "claim_text": "Colombia FSI improved from 65.0% (1991) to 88.0% (2025), gaining 23.0 percentage points",
+      "evidence_type": "calculated",
+      "source": "FSI = (1 - Gap) × 100%, where Gap from colombia_constitutional_fitness.csv",
+      "timestamp": "2025-11-11T04:31:03.142297",
+      "verification_score": 0.85,
+      "theoretical_justification": "Improvement expected per H1: transformative success with adequate support should narrow gap",
+      "external_validation": "Consistent with World Bank data showing Colombia social spending increase 8% → 15% GDP",
+      "limitations": []
+    },
+    {
+      "claim_id": "claim_b8f58f7a",
+      "claim_text": "Argentina FSI declined from 32.0% (1990) to 23.0% (2025), losing 9.0 percentage points",
+      "evidence_type": "calculated",
+      "source": "FSI = (1 - Gap) × 100%, where Gap from argentina_cf_trajectory.csv",
+      "timestamp": "2025-11-11T04:31:03.144160",
+      "verification_score": 0.85,
+      "theoretical_justification": "Decline expected per H3: fossilization with growing CLI should widen gap",
+      "external_validation": "Consistent with Argentina informality rate increasing 35% → 45% and failed reform attempts (0/23 success)",
+      "limitations": []
+    },
+    {
+      "claim_id": "claim_811be495",
+      "claim_text": "Chile 2022 projected FSI: 22.8% (if constitution had passed)",
+      "evidence_type": "projected",
+      "source": "FSI = (1 - Gap) × 100%, where Gap = 0.7724 from chile_h2_analysis.py fiscal gap calculation",
+      "timestamp": "2025-11-11T04:31:03.144289",
+      "verification_score": 0.25,
+      "theoretical_justification": "Low FSI expected per H2: utopian failure with insufficient resources",
+      "external_validation": "Validated by actual outcome: 62% rejection (voters perceived unviability)",
+      "limitations": [
+        "Counterfactual (did not actually pass)",
+        "Based on 2022 fiscal space estimates (2.5% GDP available vs 13.5% GDP promised)",
+        "Does not account for potential budget adjustments"
+      ]
+    },
+    {
+      "claim_id": "claim_461f5836",
+      "claim_text": "Colombia 2025 FSI is 65.2 percentage points higher than Chile 2022 projected FSI",
+      "evidence_type": "calculated",
+      "source": "Difference of calculated FSI values",
+      "timestamp": "2025-11-11T04:31:03.144318",
+      "verification_score": 0.85,
+      "theoretical_justification": "Large difference validates Dixon & Landau: transformative (Colombia) vs utopian (Chile)",
+      "external_validation": null,
+      "limitations": []
+    },
+    {
+      "claim_id": "claim_460a4216",
+      "claim_text": "Chile 2022 and Argentina 2025 converge at ~23% FSI (difference only 0.2 points)",
+      "evidence_type": "calculated",
+      "source": "Comparison of calculated FSI values",
+      "timestamp": "2025-11-11T04:31:03.144333",
+      "verification_score": 0.85,
+      "theoretical_justification": "Convergence expected: both systems fiscally unsustainable (Chile would be, Argentina is)",
+      "external_validation": "Both at <50% viability threshold, confirming utopian territory",
+      "limitations": []
+    }
+  ],
+  "risk_log": [],
+  "recommendations": [
+    "Increase proportion of verified claims (currently <30%)",
+    "Reduce reliance on projections/counterfactuals (currently >20%)"
+  ]
+}
